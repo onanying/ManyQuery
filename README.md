@@ -112,12 +112,14 @@ $query->setData($_GET);
 
 ```PHP
 $query->whereStr();
+// (users.account = '小刘' OR users.id_card = '小刘' OR users.name LIKE '%小刘%') AND (users.sex = 0) AND (assess.diabetes = 2)
 ```
 
 ### 返回选中的条件的链接
 
 ```PHP
 $query->selectedLinks();
+// <li class="am-fl"><span>病史: 糖尿病</span><a href="/client/lists?sex=0&search=%E5%B0%8F%E5%88%98" class="am-icon-times"></a></li><li class="am-fl"><span>性别: 女</span><a href="/client/lists?diabetes=1&search=%E5%B0%8F%E5%88%98" class="am-icon-times"></a></li><li class="am-fl"><span>搜索: 小刘</span><a href="/client/lists?diabetes=1&sex=0" class="am-icon-times"></a></li>
 ```
 
 ### 返回过滤后的GET数据
