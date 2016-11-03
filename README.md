@@ -8,6 +8,7 @@
 
 ```PHP
 // 配置
+$query = new ManyQuery();
 $aConf = [
     [
         'name' => 'search',
@@ -98,7 +99,6 @@ $aConf = [
         'where' => "assess.h_tension = 2",
     ],
 ];
-$query = new ManyQuery();
 $query->setConf($aConf);
 ```
 
@@ -131,3 +131,7 @@ if(isset($data['pressure'])){
     $sql .= 'INNER JOIN health_unique ON health_unique.uid = users.uid ';
 }
 ```
+
+### 改造
+
+框架已经搭建好了，实现思想你也明白了，你只需根据你的需求稍微修改一下。
