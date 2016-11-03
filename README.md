@@ -108,7 +108,7 @@ $query->setConf($aConf);
 $query->setData($_GET);
 ```
 
-### 获取SQL的WHERE
+### 获取SQL的where
 
 ```PHP
 $query->whereStr();
