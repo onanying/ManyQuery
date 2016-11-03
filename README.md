@@ -2,6 +2,8 @@
 
 想做一个淘宝/京东/电影网站一样的很多类型的分类筛选？还得支持搜索？ 看看我这个吧，通用的多条件查询类。
 
+![image](https://raw.githubusercontent.com/onanying/ManyQuery/master/screenshot.png)
+
 ### 配置
 
 ```PHP
